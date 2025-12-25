@@ -1,0 +1,237 @@
+{
+  "categories": [
+    {
+      "id": "history",
+      "name": "Заголовок 1",
+      "questions": [
+        {
+          "id": "history-100",
+          "point": 100,
+          "question": {
+            "text": "В каком году произошла Октябрьская революция в России?"
+          },
+          "answer": {
+            "text": "1917"
+          }
+        },
+        {
+          "id": "history-200",
+          "point": 200,
+          "question": {
+            "text": "Кто был первым президентом США?"
+          },
+          "answer": {
+            "text": "Джордж Вашингтон",
+            "images": ["/images/washington.jpg", "/images/washington-portrait.jpg"]
+          }
+        },
+        {
+          "id": "history-300",
+          "point": 300,
+          "question": {
+            "text": "В каком веке началась эпоха Возрождения?"
+          },
+          "answer": {
+            "text": "XIV век"
+          }
+        },
+        {
+          "id": "history-400",
+          "point": 400,
+          "question": {
+            "text": "Какое событие считается началом Первой мировой войны?"
+          },
+          "answer": {
+            "text": "Убийство эрцгерцога Франца Фердинанда"
+          }
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Заголовок 2",
+      "questions": [
+        {
+          "id": "science-100",
+          "point": 100,
+          "question": {
+            "text": "Какой элемент имеет химический символ H?"
+          },
+          "answer": {
+            "text": "Водород"
+          }
+        },
+        {
+          "id": "science-200",
+          "point": 200,
+          "question": {
+            "text": "Как называется самая большая планета Солнечной системы?"
+          },
+          "answer": {
+            "text": "Юпитер",
+            "images": ["/images/jupiter.jpg"]
+          }
+        },
+        {
+          "id": "science-300",
+          "point": 300,
+          "question": {
+            "text": "Что такое ДНК?"
+          },
+          "answer": {
+            "text": "Дезоксирибонуклеиновая кислота",
+            "images": ["/images/dna.jpg"]
+          }
+        },
+        {
+          "id": "science-400",
+          "point": 400,
+          "question": {
+            "text": "Кто считается отцом современной физики?"
+          },
+          "answer": {
+            "text": "Альберт Эйнштейн"
+          }
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "name": "Заголовок 3",
+      "questions": [
+        {
+          "id": "literature-100",
+          "point": 100,
+          "question": {
+            "text": "Кто написал роман 'Война и мир'?"
+          },
+          "answer": {
+            "text": "Лев Толстой"
+          }
+        },
+        {
+          "id": "literature-200",
+          "point": 200,
+          "question": {
+            "text": "Какое произведение написал Александр Пушкин 'Евгений Онегин'?"
+          },
+          "answer": {
+            "text": "Роман в стихах"
+          }
+        },
+        {
+          "id": "literature-300",
+          "point": 300,
+          "question": {
+            "text": "Кто является автором 'Гарри Поттера'?"
+          },
+          "answer": {
+            "text": "Джоан Роулинг"
+          }
+        },
+        {
+          "id": "literature-400",
+          "point": 400,
+          "question": {
+            "text": "Как называется первый роман Фёдора Достоевского?"
+          },
+          "answer": {
+            "text": "Бедные люди"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Заголовок 4",
+      "questions": [
+        {
+          "id": "sports-100",
+          "point": 100,
+          "question": {
+            "text": "В каком виде спорта используется мяч и ракетка?"
+          },
+          "answer": {
+            "text": "Теннис"
+          }
+        },
+        {
+          "id": "sports-200",
+          "point": 200,
+          "question": {
+            "text": "Сколько игроков в баскетбольной команде на площадке?"
+          },
+          "answer": {
+            "text": "5"
+          }
+        },
+        {
+          "id": "sports-300",
+          "point": 300,
+          "question": {
+            "text": "Как называется высшая лига чемпионата России по футболу?"
+          },
+          "answer": {
+            "text": "Премьер-лига"
+          }
+        },
+        {
+          "id": "sports-400",
+          "point": 400,
+          "question": {
+            "text": "Кто является рекордсменом по количеству олимпийских золотых медалей?"
+          },
+          "answer": {
+            "text": "Майкл Фелпс"
+          }
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "Заголовок 5",
+      "questions": [
+        {
+          "id": "geography-100",
+          "point": 100,
+          "question": {
+            "text": "Какая самая большая страна по площади?"
+          },
+          "answer": {
+            "text": "Россия"
+          }
+        },
+        {
+          "id": "geography-200",
+          "point": 200,
+          "question": {
+            "text": "Какой океан самый большой?"
+          },
+          "answer": {
+            "text": "Тихий океан"
+          }
+        },
+        {
+          "id": "geography-300",
+          "point": 300,
+          "question": {
+            "text": "Сколько континентов на Земле?"
+          },
+          "answer": {
+            "text": "6"
+          }
+        },
+        {
+          "id": "geography-400",
+          "point": 400,
+          "question": {
+            "text": "Какая река самая длинная в мире?"
+          },
+          "answer": {
+            "text": "Амазонка"
+          }
+        }
+      ]
+    }
+  ]
+}

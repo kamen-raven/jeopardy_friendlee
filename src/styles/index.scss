@@ -1,0 +1,37 @@
+//подключаем normalize
+@use 'vendor/normalize.scss';
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+//dev-style
+body,
+div,
+main,
+section,
+header,
+address,
+nav,
+ul,
+li,
+footer,
+figure,
+figcaption,
+span,
+img,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+fieldset,
+input,
+form,
+label,
+svg {
+  outline: solid red 1px;
+}

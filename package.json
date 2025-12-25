@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
+    "next": "^14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.33"
+    "sass": "^1.97.1",
+    "simplebar-react": "^3.3.2",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.33"
+    "eslint-config-next": "14.2.33",
+    "typescript": "^5"
   }
 }

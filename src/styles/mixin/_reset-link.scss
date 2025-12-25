@@ -1,0 +1,28 @@
+@use '../variables/index.scss' as *;
+
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; // убирает подсветку при тапе на мобильных
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  // Убираем подчеркивание для ссылок с картинками
+  &:has(img) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  // Сброс стилей для посещенных ссылок
+/*   &:visited {
+    color: inherit;
+  } */
+}
