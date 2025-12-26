@@ -17,7 +17,6 @@ export default function RootLayout({
         <main className={styles.container}>
           {children}
         </main>
-       {/*  <Popup /> */}
       </body>
     </html>
   );

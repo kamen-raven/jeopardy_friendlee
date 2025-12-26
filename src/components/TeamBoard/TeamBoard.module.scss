@@ -1,0 +1,11 @@
+@use '@styles/global/index.scss' as *;
+
+.teamBoard {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}

@@ -6,6 +6,7 @@ import styles from './MyGame.module.scss';
 import type { GameData, Question } from '../../types/types';
 import { GameBoard } from './elements/GameBoard/GameBoard';
 import { GameTitle, PopupQuestion } from './elements';
+import { TeamBoard } from '../TeamBoard/TeamBoard';
 
 const MyGame = () => {
   const gameData = useMemo(() => questionsData as GameData, []);
@@ -66,6 +67,8 @@ const MyGame = () => {
           onClose={closeQuestion}
         />
       )}
+
+      <TeamBoard />
     </div>
   );
 };
