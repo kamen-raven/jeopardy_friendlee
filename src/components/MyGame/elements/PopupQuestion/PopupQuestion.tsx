@@ -1,7 +1,7 @@
 'use client';
 
 import type { Question } from '@/types/types';
-import { useEffect, useId, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import styles from './PopupQuestion.module.scss';
@@ -25,9 +25,7 @@ const PopupQuestion = ({
   onHideAnswer,
   onClose,
 }: PopupQuestionProps) => {
-  if (!question) return null;
 
-  const titleId = useId();
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
   const scrollableNodeRef = useRef<HTMLElement | null>(null);
   const answerButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -78,12 +76,13 @@ const PopupQuestion = ({
     if (e.target === e.currentTarget) onClose();
   };
 
+  if (!question) return null;
+
   return (
     <div
       className={styles.overlay}
       role="dialog"
       aria-modal="true"
-      aria-labelledby={titleId}
       onClick={handleOverlayClick}
     >
       <div className={styles.popup}>
@@ -108,7 +107,7 @@ const PopupQuestion = ({
           }}
         >
 
-          <h2 id={titleId} className={styles.title}>
+          <h2 className={styles.title}>
             Вопрос за {question.point}
           </h2>
 

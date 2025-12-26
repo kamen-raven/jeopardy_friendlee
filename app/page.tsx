@@ -5,7 +5,7 @@ import { StartScreen, MyGame } from '@/components';
 
 
 export default function Home(): React.ReactNode {
-  const [currentScreen, setCurrentScreen] = useState<'start' | 'game'>('game');
+  const [currentScreen, setCurrentScreen] = useState<'start' | 'game'>('start');
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleStartGame = () => {

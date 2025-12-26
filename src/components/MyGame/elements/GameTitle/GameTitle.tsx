@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './GameTitle.module.scss';
-import FriendLeeLogo from '@assets/Logo.svg';
+import FriendLeeLogo from '../../../../assets/logo.svg';
 
 const GameTitle = () => {
   return (
