@@ -1,6 +1,7 @@
 export interface QuestionContent {
   text?: string;
-  images?: string[];
+  description?: string;
+  image?: string;
 }
 
 export interface Question {

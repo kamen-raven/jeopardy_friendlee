@@ -1,0 +1,61 @@
+@use '@styles/global/index.scss' as *;
+
+.startGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  height: 100%;
+  padding: 24px;
+}
+
+
+.logo {
+  width: 334px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: $h-hero;
+  font-weight: $regular;
+  margin: 0;
+  padding: 0;
+
+  &__highlight {
+    font-weight: $bold;
+    font-style: italic;
+  }
+}
+
+.startButton {
+  @include reset-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 84px;
+  gap: 10px;
+  padding: 26px 32px;
+  border-radius: 12px;
+  background-color: $black;
+  color: $text-color-secondary;
+  font-size: 36px;
+  font-weight: $regular;
+  transition: all 0.3s ease;
+
+  & svg {
+    transition: all 0.3s ease;
+    transform: rotate(270deg);
+  }
+
+  @include hover {
+    background-color: $black-hover;
+
+    & svg {
+      transform: rotate(270deg) translateY(10px);
+    }
+  }
+}

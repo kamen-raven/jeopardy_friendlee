@@ -1,0 +1,104 @@
+@use '@styles/global/index.scss' as *;
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 64px;
+  padding: 24px;
+  border-radius: 32px;
+  background-image: url('../../../../assets/backgroung_pattern.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.categoryTitle {
+  @include reset-text;
+  text-align: center;
+  font-weight: $regular;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: $black;
+  margin: auto 0;
+}
+
+.questions {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+
+  &>li {
+    display: flex;
+  }
+}
+
+
+.questionButton {
+  @include reset-button;
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 26px;
+  font-weight: $bold;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  transition: all 0.3s ease;
+
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $black;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.buttonLight {
+  background: $purple-light;
+  color: $black;
+
+  &:hover:not(:disabled) {
+    background: $purple-light-hover;
+  }
+}
+
+.buttonDark {
+  background: $purple-dark;
+  color: $white;
+
+  &:hover:not(:disabled) {
+    background: $purple-dark-hover;
+  }
+}
+
+.answered {
+  background: $gray !important;
+  color: $gray-dark !important;
+}
+
+.emptyCell {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid $gray-dark;
+  color: $gray-dark;
+}

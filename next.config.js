@@ -3,20 +3,7 @@ const ASSETS_REMOTE_HOST = process.env.ASSETS_REMOTE_HOST || 'localhost';
 
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: ASSETS_REMOTE_HOST,
-        port: '',
-        pathname: '/back/storage/**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '3000',
-        pathname: '/assets/**',
-      },
-    ],
+    remotePatterns: [{ hostname: '**' }],
   },
   webpack(config) {
     // Grab the existing rule that handles SVG imports

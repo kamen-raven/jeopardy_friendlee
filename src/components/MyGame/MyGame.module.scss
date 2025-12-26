@@ -1,0 +1,11 @@
+@use '@styles/global/index.scss' as *;
+
+.myGame {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+  height: 100%;
+  padding: 32px;
+}
+
