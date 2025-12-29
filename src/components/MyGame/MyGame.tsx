@@ -23,7 +23,7 @@ const MyGame = () => {
   };
 
   const closeQuestion = () => {
-    if (selectedQuestion && isAnswerVisible) {
+    if (selectedQuestion) {
       setAnsweredQuestionIds((prev) => {
         const next = new Set(prev);
         next.add(selectedQuestion.id);
@@ -37,14 +37,9 @@ const MyGame = () => {
 
 
   //# кнопка Показать / Скрыть ответ
-  const showAnswer = () => {
+  const toggleAnswer = (isAnswerVisible: boolean) => {
     if (!selectedQuestion) return;
-    setIsAnswerVisible(true);
-  };
-
-  const hideAnswer = () => {
-    if (!selectedQuestion) return;
-    setIsAnswerVisible(false);
+    setIsAnswerVisible(!isAnswerVisible);
   };
 
 
@@ -62,8 +57,7 @@ const MyGame = () => {
         <PopupQuestion
           question={selectedQuestion}
           isAnswerVisible={isAnswerVisible}
-          onShowAnswer={showAnswer}
-          onHideAnswer={hideAnswer}
+          onToggleAnswer={toggleAnswer}
           onClose={closeQuestion}
         />
       )}

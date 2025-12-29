@@ -12,8 +12,7 @@ import Image from 'next/image';
 interface PopupQuestionProps {
   question: Question | null;
   isAnswerVisible: boolean;
-  onShowAnswer: () => void;
-  onHideAnswer: () => void;
+  onToggleAnswer: (isAnswerVisible: boolean) => void;
   onClose: () => void;
 }
 
@@ -21,8 +20,7 @@ interface PopupQuestionProps {
 const PopupQuestion = ({
   question,
   isAnswerVisible,
-  onShowAnswer,
-  onHideAnswer,
+  onToggleAnswer,
   onClose,
 }: PopupQuestionProps) => {
 
@@ -30,8 +28,8 @@ const PopupQuestion = ({
   const scrollableNodeRef = useRef<HTMLElement | null>(null);
   const answerButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  //# закрытие попапа по Escape
-  useEffect(() => {
+  // закрытие попапа по Escape
+/*   useEffect(() => {
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
@@ -47,7 +45,12 @@ const PopupQuestion = ({
       window.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = prevOverflow;
     };
-  }, [onClose]);
+  }, [onClose]); */
+
+    // закрытие попапа по клику на overlay
+/*   const handleOverlayClick: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    if (e.target === e.currentTarget) onClose();
+  }; */
 
 
   //# скролл к ответу
@@ -71,10 +74,7 @@ const PopupQuestion = ({
     }
   }, [isAnswerVisible]);
 
-  //# закрытие попапа по клику на overlay
-  const handleOverlayClick: React.MouseEventHandler<HTMLDivElement> = (e) => {
-    if (e.target === e.currentTarget) onClose();
-  };
+
 
   if (!question) return null;
 
@@ -83,7 +83,7 @@ const PopupQuestion = ({
       className={styles.overlay}
       role="dialog"
       aria-modal="true"
-      onClick={handleOverlayClick}
+/*       onClick={handleOverlayClick} */
     >
       <div className={styles.popup}>
         <button className={styles.closeButton}
@@ -139,7 +139,7 @@ const PopupQuestion = ({
             ref={answerButtonRef}
             className={`${styles.answerButton} ${isAnswerVisible ? styles.answerButton__hide : styles.answerButton__show}`}
             type="button"
-            onClick={isAnswerVisible ? onHideAnswer : onShowAnswer}
+            onClick={() => onToggleAnswer(isAnswerVisible)}
           >
             <span>
               {isAnswerVisible ? 'Скрыть ответ' : 'Показать ответ'}
