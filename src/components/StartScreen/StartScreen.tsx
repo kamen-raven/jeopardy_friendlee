@@ -20,7 +20,7 @@ const StartScreen: React.FC<StartGameInterface> = ({ onStartGame, isAnimating = 
     // После завершения начальной анимации устанавливаем флаг
     const timer = setTimeout(() => {
       setFroggyVisible(true);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
