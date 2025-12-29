@@ -1,3 +1,4 @@
+@use 'sass:math';
 // FONT FAMILY
 $ff-base: var(--heliosext);
 
@@ -7,16 +8,26 @@ $bold: 700;
 
 // FONT SIZE
 
+
+@function fluid($min, $max, $minVw: 1600, $maxVw: 3840) {
+  $minNum: math.div($min, 1px);
+  $maxNum: math.div($max, 1px);
+
+  $slope: math.div(($maxNum - $minNum), ($maxVw - $minVw)) * 100;
+  $intercept: $minNum - math.div($slope, 100) * $minVw;
+
+  @return clamp(#{$min}, calc(#{$intercept}px + #{$slope}vw), #{$max});
+}
+
 // HEADERS
-$h-hero: 128px;
-$h2: 56px;
-$h3: 46px;
+$h-hero: fluid(128px, 256px);
+$h2: fluid(56px, 112px);
+$h3: fluid(46px, 92px);
 
 
 // PARAGRAPHS
-// paragraph для FHD (1921px+)
-$p1: 46px;
-$p2: 28px;
+$p1: fluid(46px, 92px);
+$p2: fluid(28px, 56px);
 
 // numbers 
-$btn-1: 32px;
+$btn-1: fluid(32px, 64px);

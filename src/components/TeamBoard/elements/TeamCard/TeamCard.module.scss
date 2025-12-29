@@ -91,7 +91,7 @@
 .teamNameInput {
   @include reset-text;
   font-weight: $regular;
-  font-size: 28px;
+  font-size: $p2;
   line-height: 1em;
   background: transparent;
   border: 1px solid $black;
@@ -126,7 +126,7 @@
 .scoreInput {
   @include reset-text;
   font-weight: $regular;
-  font-size: 24px;
+  font-size: fluid(24px, 48px);
   line-height: 1em;
   background: transparent;
   border: none;
@@ -178,7 +178,7 @@
 .scorePointsAll {
   @include reset-text;
   font-weight: $regular;
-  font-size: 24px;
+  font-size: fluid(24px, 48px);
   line-height: 1em;
 }
 

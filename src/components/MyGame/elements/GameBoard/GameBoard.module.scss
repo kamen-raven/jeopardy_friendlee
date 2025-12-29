@@ -24,7 +24,7 @@
   @include reset-text;
   text-align: center;
   font-weight: $regular;
-  font-size: 26px;
+  font-size: fluid(26px, 52px);
   line-height: 1.2;
   letter-spacing: -0.04em;
   color: $black;
@@ -47,10 +47,10 @@
 .questionButton {
   @include reset-button;
   width: 100%;
-  height: 54px;
+  height: fluid(54px, 104px);
   border-radius: 12px;
   padding: 12px;
-  font-size: 26px;
+  font-size: fluid(26px, 52px);
   font-weight: $bold;
   font-style: italic;
   line-height: 1;
