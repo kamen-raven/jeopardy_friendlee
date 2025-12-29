@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './StartScreen.module.scss';
 import FriendLeeLogo from '../../assets/logo.svg';
 import ArrowIcon from '@assets/arrow.svg';
@@ -14,11 +14,22 @@ export interface StartGameInterface {
 
 
 const StartScreen: React.FC<StartGameInterface> = ({ onStartGame, isAnimating = false }) => {
-  return (
-    <div className={`${styles.startGame} ${isAnimating ? styles.animating : ''}`}>
-      <div className={styles.wrapper}>
+  const [froggyVisible, setFroggyVisible] = useState(false);
 
-        <div className={styles.logo}>
+  useEffect(() => {
+    // После завершения начальной анимации устанавливаем флаг
+    const timer = setTimeout(() => {
+      setFroggyVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className={`${styles.startGame}`}>
+      <div className={`${styles.wrapper} ${isAnimating ? styles.animating : ''}`}>
+
+        <div className={`${styles.logo} ${isAnimating ? styles.animating : ''}`}>
           <FriendLeeLogo />
         </div>
 
@@ -28,16 +39,17 @@ const StartScreen: React.FC<StartGameInterface> = ({ onStartGame, isAnimating = 
         </h1>
 
         <button
+          type='button'
           className={`${styles.startButton} ${isAnimating ? styles.animating : ''}`}
           onClick={onStartGame}
-          disabled={isAnimating}
+          disabled={!froggyVisible || isAnimating}
         >
           Начать игру
           <ArrowIcon />
         </button>
       </div>
 
-      <div className={styles.froggy}>
+      <div className={`${styles.froggy} ${froggyVisible ? styles.visible : ''} ${isAnimating ? styles.animating : ''}`}>
         <Image src={FroggyImage} alt="Froggy" />
       </div>
 

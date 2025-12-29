@@ -13,7 +13,7 @@ export default function Home(): React.ReactNode {
     setTimeout(() => {
       setCurrentScreen('game');
       setIsAnimating(false);
-    }, 100);
+    }, 1200);
   }
 
   return (
