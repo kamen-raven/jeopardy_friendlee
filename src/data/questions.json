@@ -2,18 +2,18 @@
   "categories": [
     {
       "id": "cat1",
-      "name": "Ведьмаки",
+      "name": "friend Lee",
       "questions": [
         {
           "id": "q1-1",
           "point": 100,
           "question": {
-            "text": "Кто это?",
-            "image": "https://i.playground.ru/p/VnIhK9pFSeYfuvWtx_fYUQ.jpeg.webp?760xauto",
+            "text": "Назовите общее кол-во символов в домене компании",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Геральт из Ривии",
+            "text": "friendlee.pro - 13 символов",
             "image": "",
             "description": ""
           }
@@ -22,12 +22,12 @@
           "id": "q1-2",
           "point": 200,
           "question": {
-            "text": "Как называется крепость ведьмаков Школы Волка?",
+            "text": "Сколько всего ролей есть внутри Дискорд сервера?",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Каэр Морхен",
+            "text": "11",
             "image": "",
             "description": ""
           }
@@ -36,12 +36,12 @@
           "id": "q1-3",
           "point": 300,
           "question": {
-            "text": "Для чего используется этот знак?",
-            "image": "https://witchinfo.neocities.org/images/tw3oE40l5D0.jpg",
+            "text": "Сколько всего участников в Дискорд сервере?",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Это знак Квен. Он используется для создания защитного барьера",
+            "text": "40",
             "image": "",
             "description": ""
           }
@@ -50,12 +50,12 @@
           "id": "q1-4",
           "point": 400,
           "question": {
-            "text": "Назови эликсир, который повышает регенерацию и концентрацию Геральта.",
+            "text": "Сколько проектов добавлено в презентацию на сайте компании?",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Ласточка (Swallow)",
+            "text": "26",
             "image": "",
             "description": ""
           }
@@ -64,19 +64,19 @@
     },
     {
       "id": "cat2",
-      "name": "Предназначение",
+      "name": "А что тут у нас?",
       "questions": [
         {
           "id": "q2-1",
           "point": 100,
           "question": {
-            "text": "Кем Цири приходится Геральту по Предназначению?",
-            "image": "",
+            "text": "Ниже вы видите кусочек изображения. Назовите что или кто это",
+            "image": "https://i.postimg.cc/v8zW4ckG/Snimok-ekrana-2026-01-07-v-12-30-09.jpg",
             "description": ""
           },
           "answer": {
-            "text": "Она — Дитя Предназначения",
-            "image": "",
+            "text": "Эйфелевая башня",
+            "image": "https://i.postimg.cc/PrwRGbND/Snimok-ekrana-2026-01-07-v-12-24-55.jpg",
             "description": ""
           }
         },
@@ -84,13 +84,13 @@
           "id": "q2-2",
           "point": 200,
           "question": {
-            "text": "Из какого королевства происходит Цири?",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/c/c3/%D0%93%D0%B5%D1%80%D0%B1_%D0%A6%D0%B8%D0%BD%D1%82%D1%80%D1%8B.png/revision/latest?cb=20200813183814",
+            "text": "Ниже вы видите кусочек изображения. Назовите что или кто это",
+            "image": "https://i.postimg.cc/05dC7tM9/Snimok-ekrana-2026-01-07-v-12-28-57.jpg",
             "description": ""
           },
           "answer": {
-            "text": "Из Цинтры",
-            "image": "",
+            "text": "Губка для мытья посуды",
+            "image": "https://i.postimg.cc/dQm9GWkK/Snimok-ekrana-2026-01-07-v-12-29-26.jpg",
             "description": ""
           }
         },
@@ -98,13 +98,13 @@
           "id": "q2-3",
           "point": 300,
           "question": {
-            "text": "Как зовут бабушку Цири?",
-            "image": "",
+            "text": "Ниже вы видите кусочек изображения. Назовите что или кто это",
+            "image": "https://i.postimg.cc/kMLNKkw8/Snimok-ekrana-2026-01-07-v-11-53-18.jpg",
             "description": ""
           },
           "answer": {
-            "text": "Калантэ",
-            "image": "",
+            "text": "Картина 'Поцелуй'. Густав Климт",
+            "image": "https://i.postimg.cc/4dNHR15w/Snimok-ekrana-2026-01-07-v-11-51-59.jpg",
             "description": ""
           }
         },
@@ -112,13 +112,13 @@
           "id": "q2-4",
           "point": 400,
           "question": {
-            "text": "Как называется магическая сила Цири, позволяющая ей путешествовать между мирами?",
-            "image": "",
+            "text": "Ниже вы видите кусочек изображения. Назовите что или кто это",
+            "image": "https://i.postimg.cc/Ssv6Z5hY/Snimok-ekrana-2026-01-07-v-11-58-44.jpg",
             "description": ""
           },
           "answer": {
-            "text": "Старшая Кровь",
-            "image": "",
+            "text": "Флаг страны Босния и Герцеговина",
+            "image": "https://i.postimg.cc/PqMKM2Nj/Snimok-ekrana-2026-01-07-v-11-58-49.jpg",
             "description": ""
           }
         }
@@ -126,19 +126,19 @@
     },
     {
       "id": "cat3",
-      "name": "Магия",
+      "name": "Синема",
       "questions": [
         {
           "id": "q3-1",
           "point": 100,
           "question": {
-            "text": "Как зовут чародейку, связанную с Геральтом?",
+            "text": "Назовите самый кассовый фильм за всю историю",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Йеннифер из Венгерберга",
-            "image": "https://godsbay.ru/vikings/images/yennefer.jpg",
+            "text": "Аватар (2 923 710 708 долларов) ",
+            "image": "",
             "description": ""
           }
         },
@@ -146,12 +146,12 @@
           "id": "q3-2",
           "point": 200,
           "question": {
-            "text": "Как называется организация магов, в которой Йеннифер состояла?",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/1/1e/%D0%9B%D0%BE%D0%B6%D0%B0%D0%922.jpg/revision/latest/scale-to-width-down/1000?cb=20211103223839",
+            "text": "Назовите фильм, который набрал наибольшее кол-во оскаров",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Ложа чародеек",
+            "text": "Бен-гур, Титаник, Властелин колец: Возвращение короля (11 оскаров)",
             "image": "",
             "description": ""
           }
@@ -160,12 +160,12 @@
           "id": "q3-3",
           "point": 300,
           "question": {
-            "text": "В кого умеет превращаться Филиппа Эйльхарт?",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/8/8e/Filippa.png/revision/latest?cb=20120810053141",
+            "text": "Какой самый дорогой фильм в истории?",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "В сову",
+            "text": "'Звёздные войны: Скайуокер. Восход.' Бюджет — 490 млн долларов",
             "image": "",
             "description": ""
           }
@@ -174,12 +174,12 @@
           "id": "q3-4",
           "point": 400,
           "question": {
-            "text": "Где Йеннифер прошла обучение магии?",
+            "text": "Назовите самый первый в мире фильм",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "В Аретузе",
+            "text": "'Прибытие поезда на вокзал Ла-Сьота' 1896 г, длительностью 1 минута",
             "image": "",
             "description": ""
           }
@@ -188,18 +188,18 @@
     },
     {
       "id": "cat4",
-      "name": "Монстры и Бестии",
+      "name": "Стори",
       "questions": [
         {
           "id": "q4-1",
           "point": 100,
           "question": {
-            "text": "Каким клинком Геральт сражается с монстрами?",
+            "text": "В каком году распался СССР?",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Серебряным мечом",
+            "text": "1991 г.",
             "image": "",
             "description": ""
           }
@@ -208,12 +208,12 @@
           "id": "q4-2",
           "point": 200,
           "question": {
-            "text": "Как называют оборотня во Вселенной Ведьмака?",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/b/b8/%D0%9C%D0%BE%D1%80%D0%BA%D0%B2%D0%B0%D1%80%D0%B3.jpg/revision/latest?cb=20191027160005",
+            "text": "При каком императоре отменили крепостное право в России?",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Волколак",
+            "text": "Александр II",
             "image": "",
             "description": ""
           }
@@ -222,12 +222,12 @@
           "id": "q4-3",
           "point": 300,
           "question": {
-            "text": "Какое существо живёт под водой и похищает людей со шлюпок?",
+            "text": "Кто такой Октавиан Август? Назовите его полное имя",
             "image": "",
-            "description": "Варианты: утопец, сирена, кикимора"
+            "description": ""
           },
           "answer": {
-            "text": "Сирена",
+            "text": "Первый император Древнего Рима. Гай Юлий Цезарь Октавиан Август",
             "image": "",
             "description": ""
           }
@@ -236,12 +236,12 @@
           "id": "q4-4",
           "point": 400,
           "question": {
-            "text": "Назови чудовище, которое преследует Геральта в королевстве Темерия и связано с проклятием княжны.",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/6/62/%D0%A1%D1%82%D1%80%D1%8B%D0%B3%D0%B03%D0%9F%D0%92.png/revision/latest?cb=20231228101406",
-            "description": "Девушка-монстр в коридорах замка"
+            "text": "В каком году произошёл первый полёт человека в воздухе на Земле? Какой это был вид транспорта?",
+            "image": "",
+            "description": ""
           },
           "answer": {
-            "text": "Стрыга",
+            "text": "1783 год, Воздушный шар",
             "image": "",
             "description": ""
           }
@@ -250,18 +250,18 @@
     },
     {
       "id": "cat5",
-      "name": "Континент и Королевства",
+      "name": "Всё обо всём",
       "questions": [
         {
           "id": "q5-1",
           "point": 100,
           "question": {
-            "text": "Как называется мир, в котором происходит действие Ведьмака?",
+            "text": "Какое животное имеет 3 сердца?",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Континент",
+            "text": "Осьминог/Кальмар",
             "image": "",
             "description": ""
           }
@@ -270,12 +270,12 @@
           "id": "q5-2",
           "point": 200,
           "question": {
-            "text": "Какое королевство ведёт бесконечные войны за расширение территории?",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/5/50/%D0%A4%D0%BB%D0%B0%D0%B3_%D0%9D%D0%B8%D0%BB%D1%8C%D1%84%D0%B3%D0%B0%D0%B0%D1%80%D0%B4%D0%B02.png/revision/latest?cb=20200825185056",
+            "text": "Какой газ составляет большую часть атмосферы Земли?",
+            "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Нильфгаард",
+            "text": "Азот",
             "image": "",
             "description": ""
           }
@@ -284,13 +284,13 @@
           "id": "q5-3",
           "point": 300,
           "question": {
-            "text": "Город, где работает Лютик и часто выступает?",
+            "text": "Что обозначается как Pb в периодической системе Менделеева?",
             "image": "",
-            "description": "Средневековый город со сценами и тавернами"
+            "description": ""
           },
           "answer": {
-            "text": "Новиград",
-            "image": "https://static.wikia.nocookie.net/vedmak/images/a/a2/%D0%9D%D0%BE%D0%B2%D0%B8%D0%B3%D1%80%D0%B0%D0%B4_%28Karol_Bem%29.png/revision/latest?cb=20230913003704",
+            "text": "Plumbum, свинец",
+            "image": "",
             "description": ""
           }
         },
@@ -298,12 +298,12 @@
           "id": "q5-4",
           "point": 400,
           "question": {
-            "text": "Место, где живут эльфы и скрытые силы Дикой Охоты.",
+            "text": "Что такое глабелла?",
             "image": "",
             "description": ""
           },
           "answer": {
-            "text": "Мир Aen Elle",
+            "text": "Промежуток между бровями",
             "image": "",
             "description": ""
           }
